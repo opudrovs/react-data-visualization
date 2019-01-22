@@ -13,6 +13,8 @@ export default class BarChart extends Component<Props> {
     private svgRef?: SVGElement | null;
 
     public componentDidMount() {
+        const { data } = this.props;
+        
         this.drawChart(this.props.data);
     }
 
