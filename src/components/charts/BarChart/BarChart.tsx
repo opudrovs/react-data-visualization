@@ -5,8 +5,8 @@ import { select } from 'd3-selection';
 import './BarChart.css';
 
 interface Props {
-    data: number[];
-    style: CSSProperties;
+    data: object[];
+    style?: CSSProperties;
 }
 
 export default class BarChart extends Component<Props> {
@@ -16,7 +16,7 @@ export default class BarChart extends Component<Props> {
         this.drawChart(this.props.data);
     }
 
-    private drawChart(data: number[]) {
+    private drawChart(data: object[]) {
         const svg = select(this.svgRef!);
         // Draw chart here.
     }
