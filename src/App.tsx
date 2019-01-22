@@ -9,8 +9,10 @@ const data = require('./data/BarChart.json');
 class App extends Component {
   render() {
     return (
-      <div className="App">
-          <header className="App-header"/>
+      <div className="app">
+          <header className="appHeader">
+              <h1>Sample Data Visualization</h1>
+          </header>
           <div className="barChart">
               <BarChart
                   data={data}
