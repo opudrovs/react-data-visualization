@@ -1,6 +1,6 @@
 import React, { Component, CSSProperties } from 'react';
 
-import {select} from 'd3-selection';
+import { select } from 'd3-selection';
 
 import './BarChart.css';
 
