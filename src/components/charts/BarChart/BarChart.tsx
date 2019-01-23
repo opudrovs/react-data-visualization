@@ -14,8 +14,8 @@ export default class BarChart extends Component<Props> {
 
     public componentDidMount() {
         const { data } = this.props;
-        
-        this.drawChart(this.props.data);
+
+        this.drawChart(data);
     }
 
     private drawChart(data: object[]) {
