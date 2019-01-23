@@ -1,37 +1,51 @@
 import React, { Component, CSSProperties } from 'react';
 
-import { select } from 'd3-selection';
+import { scaleLinear } from 'd3-scale';
 
 import './BarChart.css';
 
 interface Props {
+    width: number,
+    height: number,
     data: object[];
     style?: CSSProperties;
 }
 
 export default class BarChart extends Component<Props> {
-    private svgRef?: SVGElement | null;
-
-    public componentDidMount() {
-        const { data } = this.props;
-
-        this.drawChart(data);
-    }
-
-    private drawChart(data: object[]) {
-        const svg = select(this.svgRef!);
-        // Draw chart here.
-    }
-
     public render() {
-        const { style } = this.props;
+        const { width, height, style } = this.props;
+
+        const data = [10, 20, 30, 40, 80];
+        const yScale = scaleLinear()
+            .domain([0, Math.max(...data)])
+            .rangeRound([height, 0]);
+        const barInterval = 10;
+        const barWidth = Math.floor((width - (data.length - 1) * barInterval) / data.length);
 
         return (
             <svg
-                className="barChart"
+                width={width}
+                height={height}
                 style={style}
-                ref={ref => (this.svgRef = ref)}
-            />
+                className="barChart"
+            >
+                {data.map((element, index) =>
+                    <rect
+                        key={`bar ${index}`}
+                        x={index * (barWidth + barInterval)}
+                        y={yScale(element)}
+                        rx={6}
+                        ry={6}
+                        width={barWidth - 1}
+                        height={height - yScale(element)}
+                        style={{
+                            fill: '#0000ff',
+                            strokeWidth: 3,
+                            stroke: '#00ccff'
+                        }}
+                    />,
+                )}
+            </svg>
         );
     }
 }

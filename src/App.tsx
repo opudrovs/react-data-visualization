@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import BarChart from './components/charts/BarChart/BarChart';
 
-import './styles/App.css';
+import './App.css';
 
 import * as data from './data/BarChart.json';
 
@@ -13,12 +13,14 @@ class App extends Component {
                 <header className="appHeader">
                     <h1>Sample Data Visualization</h1>
                 </header>
-                <div className="barChart">
                     <BarChart
+                        width={400}
+                        height={400}
                         data={data}
-                        style={{ backgroundColor: '#ccc' }}
+                        style={{
+                            backgroundColor: '#ccc'
+                        }}
                     />
-                </div>
             </div>
         );
     }
