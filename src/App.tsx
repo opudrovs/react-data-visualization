@@ -4,7 +4,7 @@ import BarChart from './components/charts/BarChart/BarChart';
 
 import './styles/App.css';
 
-const data = require('./data/BarChart.json');
+import * as data from './data/BarChart.json';
 
 class App extends Component {
     render() {
