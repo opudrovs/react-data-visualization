@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
+import BarChart from './components/charts/BarChart/BarChart';
+
 import './App.css';
 
+import * as data from './data/BarChart.json';
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="app">
+                <header className="appHeader">
+                    <h1>Sample Data Visualization</h1>
+                </header>
+                    <BarChart
+                        width={400}
+                        height={400}
+                        data={data}
+                        style={{
+                            backgroundColor: '#ccc'
+                        }}
+                    />
+            </div>
+        );
+    }
 }
 
 export default App;
