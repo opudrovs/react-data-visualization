@@ -1,0 +1,23 @@
+[
+    {
+        "year": "2019",
+        "projects": {
+            "react": 250,
+            "angular": 100
+        }
+    },
+    {
+        "year": "2018",
+        "projects": {
+            "react": 150,
+            "angular": 70
+        }
+    },
+    {
+        "year": "2017",
+        "projects": {
+            "react": 100,
+            "angular": 50
+        }
+    }
+]
