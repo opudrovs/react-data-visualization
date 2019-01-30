@@ -1,13 +1,13 @@
 {
-  "main.css": "/static/css/main.d48ad5bb.chunk.css",
-  "main.js": "/static/js/main.966cc497.chunk.js",
-  "main.js.map": "/static/js/main.966cc497.chunk.js.map",
-  "static/js/1.6d3b4955.chunk.js": "/static/js/1.6d3b4955.chunk.js",
-  "static/js/1.6d3b4955.chunk.js.map": "/static/js/1.6d3b4955.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.d48ad5bb.chunk.css.map": "/static/css/main.d48ad5bb.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.c94901b992060b5dd2701ad3db398fd9.js": "/precache-manifest.c94901b992060b5dd2701ad3db398fd9.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/react-data-visualization/static/css/main.d48ad5bb.chunk.css",
+  "main.js": "/react-data-visualization/static/js/main.033d4c7c.chunk.js",
+  "main.js.map": "/react-data-visualization/static/js/main.033d4c7c.chunk.js.map",
+  "static/js/1.6d3b4955.chunk.js": "/react-data-visualization/static/js/1.6d3b4955.chunk.js",
+  "static/js/1.6d3b4955.chunk.js.map": "/react-data-visualization/static/js/1.6d3b4955.chunk.js.map",
+  "runtime~main.js": "/react-data-visualization/static/js/runtime~main.60fd484a.js",
+  "runtime~main.js.map": "/react-data-visualization/static/js/runtime~main.60fd484a.js.map",
+  "static/css/main.d48ad5bb.chunk.css.map": "/react-data-visualization/static/css/main.d48ad5bb.chunk.css.map",
+  "index.html": "/react-data-visualization/index.html",
+  "precache-manifest.4b0f9c758ef684887fdc720607b11c1c.js": "/react-data-visualization/precache-manifest.4b0f9c758ef684887fdc720607b11c1c.js",
+  "service-worker.js": "/react-data-visualization/service-worker.js"
 }
