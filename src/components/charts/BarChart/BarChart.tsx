@@ -4,18 +4,27 @@ import { scaleLinear } from 'd3-scale';
 
 import './BarChart.css';
 
+interface DataPoint
+{
+    year: string,
+    projects: {
+        react: number,
+        angular: number
+    }
+}
+
 interface Props {
     width: number,
     height: number,
-    data: object[];
+    data: DataPoint[];
     style?: CSSProperties;
 }
 
-export default class BarChart extends Component<Props> {
+export default class BarChart extends Component<Props, object> {
     public render() {
         const { width, height, style } = this.props;
 
-        const data = [10, 20, 30, 40, 80];
+        const data = [10, 20, 30, 40, 80]; // Temp data to use instead of data in props, for now.
         const yScale = scaleLinear()
             .domain([0, Math.max(...data)])
             .rangeRound([height, 0]);
