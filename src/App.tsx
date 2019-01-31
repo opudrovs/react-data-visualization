@@ -15,7 +15,7 @@ class App extends Component {
                 </header>
                     <BarChart
                         viewBoxWidth={400}
-                        viewBoxHeight={400}
+                        viewBoxHeight={250}
                         data={data}
                         style={{
                             backgroundColor: '#ccc'
