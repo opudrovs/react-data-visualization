@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "88204278689630227738",
+    "revision": "64ba00000110976ddbf1",
     "url": "/react-data-visualization/static/css/main.13c51126.chunk.css"
   },
   {
-    "revision": "88204278689630227738",
-    "url": "/react-data-visualization/static/js/main.88204278.chunk.js"
+    "revision": "64ba00000110976ddbf1",
+    "url": "/react-data-visualization/static/js/main.64ba0000.chunk.js"
   },
   {
     "revision": "6d3b495548b380f8438c",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/react-data-visualization/static/js/runtime~main.60fd484a.js"
   },
   {
-    "revision": "eb4c9ddaaa9c8be0b0cfe976255b218d",
+    "revision": "8abca4750ff92872452bdf43afc3b432",
     "url": "/react-data-visualization/index.html"
   }
 ];
