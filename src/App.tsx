@@ -11,7 +11,7 @@ class App extends Component {
         return (
             <div className="app">
                 <header className="appHeader">
-                    <h1>Sample Data Visualization</h1>
+                    <h1>React Data Visualization</h1>
                 </header>
                     <BarChart
                         viewBoxWidth={400}
