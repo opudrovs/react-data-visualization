@@ -14,27 +14,26 @@ interface DataPoint
 }
 
 interface Props {
-    width: number,
-    height: number,
+    viewBoxWidth: number,
+    viewBoxHeight: number,
     data: DataPoint[];
     style?: CSSProperties;
 }
 
 export default class BarChart extends Component<Props, object> {
     public render() {
-        const { width, height, style } = this.props;
+        const { viewBoxWidth, viewBoxHeight, style } = this.props;
 
-        const data = [10, 20, 30, 40, 80]; // Temp data to use instead of data in props, for now.
+        const data = [10, 15, 20, 25, 40]; // Temp data to use instead of data in props, for now.
         const yScale = scaleLinear()
             .domain([0, Math.max(...data)])
-            .rangeRound([height, 0]);
+            .rangeRound([viewBoxHeight, 0]);
         const barInterval = 10;
-        const barWidth = Math.floor((width - (data.length - 1) * barInterval) / data.length);
+        const barWidth = Math.floor((viewBoxWidth - (data.length - 1) * barInterval) / data.length);
 
         return (
             <svg
-                width={width}
-                height={height}
+                viewBox={`0 0 ${viewBoxWidth} ${viewBoxHeight}`}
                 style={style}
                 className="barChart"
             >
@@ -46,7 +45,7 @@ export default class BarChart extends Component<Props, object> {
                         rx={6}
                         ry={6}
                         width={barWidth - 1}
-                        height={height - yScale(element)}
+                        height={viewBoxHeight - yScale(element)}
                         style={{
                             fill: '#0000ff',
                             strokeWidth: 3,

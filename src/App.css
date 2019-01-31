@@ -11,3 +11,25 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
+
+.barChart {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 0.25rem;
+    transition: width .1s linear;
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+    .barChart {
+        width: 60%;
+    }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+    .barChart {
+        width: 40%;
+    }
+}
